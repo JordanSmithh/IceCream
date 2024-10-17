@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IceCream</title>
+    <script src="main.js"></script>
 </head>
 <body>
     <label></label>
@@ -15,13 +16,20 @@
     </lable>
     <fieldset id="toppings">
         <legend>Toppings</legend>
+        <label>
+            <input type="checkbox" id="sprinkles"> Sprinkles($0.50)
+        </label>
+        <label>
+            <input type="checkbox" id="whipped"> Whipped ($0.25)
+        </label>
+        <label>
+            <input type="checkbox" id="fudge"> Fudge ($1.25)
+        </label>
+        <label>
+            <input type="checkbox" id="cherry"> Sprinkles ($0.25)
+        </label>
     </fieldset>
+    <button id="submitOrder">Submit Order</button>
+    <pre id="outputReceipt">?</pre>
 </body>
-<script>
-    function onContainerClicked(e){
-        toppings.style.display = cup.checked ? "block" : "none";
-    }
-    cup.addEventlistner("click", onContainerClicked);
-    scoop.addEventlistner("click", onContainerClicked);
-</script>
 </html>

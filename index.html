@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream</title>
+</head>
+<body>
+    <label></label>
+    <input type="radio" name="container" id="cup"> Cup
+    </label>
+    <label></label>
+    <input type="radio" name="container" id="cone"> Cone 
+    </lable>
+    <fieldset id="toppings">
+        <legend>Toppings</legend>
+    </fieldset>
+</body>
+<script>
+    function onContainerClicked(e){
+        toppings.style.display = cup.checked ? "block" : "none";
+    }
+    cup.addEventlistner("click", onContainerClicked);
+    scoop.addEventlistner("click", onContainerClicked);
+</script>
+</html>
